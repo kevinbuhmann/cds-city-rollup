@@ -1,0 +1,24 @@
+{
+  "name": "cds-city-rollup",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --config ./prettier.json --write",
+    "prebuild": "rimraf ./dist",
+    "build": "rollup --config ./rollup.config.js"
+  },
+  "dependencies": {
+    "@cds/city": "1.1.0",
+    "@cds/core": "6.4.0",
+    "modern-normalize": "1.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-html": "^1.0.2",
+    "@rollup/plugin-typescript": "11.1.0",
+    "prettier": "2.8.7",
+    "rimraf": "5.0.0",
+    "rollup": "2.79.1",
+    "rollup-plugin-styles": "4.0.0",
+    "sass": "^1.61.0"
+  }
+}
